@@ -233,7 +233,7 @@ PRODUCT_COPY_FILES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.samsung-qcom
+    vendor.lineage.livedisplay@2.0-service-sdm
 
 # Low power Whitelist
 PRODUCT_COPY_FILES += \
