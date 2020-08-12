@@ -824,7 +824,6 @@ vendor/lib/mediadrm/libdrmclearkeyplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
 # Display-Hardware
--lib/libsdm-disp-apis.so
 vendor/lib/hw/gralloc.msm8937.so
 vendor/lib/libdrm.so
 vendor/lib/libdrmutils.so
@@ -834,7 +833,6 @@ vendor/lib/libqdMetaData.so
 vendor/lib/libqdutils.so
 vendor/lib/libqservice.so
 vendor/lib/libsdmcore.so
-vendor/lib/libsdmextension.so
 vendor/lib/libsdmutils.so
 vendor/lib/vendor.display.config@1.0.so
 vendor/lib/vendor.display.config@1.1.so
@@ -964,32 +962,36 @@ vendor/lib/libgps.utils.so
 vendor/lib/hw/gatekeeper.mdfpp.so
 vendor/lib/hw/gatekeeper.msm8937.so
 
-# Graphics
-vendor/lib/egl/eglSubDriverAndroid.so
-vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/egl/libq3dtools_esx.so
-vendor/lib/egl/libQTapGLES.so
-vendor/lib/libadreno_utils.so
-vendor/lib/libbccQTI.so
-vendor/lib/libC2D2.so
-vendor/lib/libc2d30-a3xx.so
-vendor/lib/libc2d30_bltlib.so
-vendor/lib/libCB.so
-vendor/lib/libgsl.so
-vendor/lib/libhdr_tm.so
-vendor/lib/libllvm-glnext.so
-vendor/lib/libllvm-qcom.so
-vendor/lib/libOpenCL.so
-vendor/lib/libRSDriver_adreno.so
-vendor/lib/librs_adreno.so
-vendor/lib/librs_adreno_sha1.so
-vendor/lib/libsdm-color.so
-vendor/lib/libsdm-diag.so
--vendor/lib/libsdm-disp-vndapis.so
-vendor/lib/libtinyxml2_1.so
+# Graphics - from X00P - QKQ1.191002.002 17.00.2003.23-20200401
+-lib/libsdm-disp-apis.so:vendor/lib/libsdm-disp-apis.so|5b006423286008ba9b54b8c29e9ce2ab4b6fa14d
+vendor/lib/egl/eglSubDriverAndroid.so|c90099d92d885e3533008cb422d872f6ebebc6d4
+vendor/lib/egl/libEGL_adreno.so|a3bb3c748cc180521a3b0ea173e714a55c01b118
+vendor/lib/egl/libGLESv1_CM_adreno.so|43c864f0c3f384085f9d19a2e1d56e672f319ea6
+vendor/lib/egl/libGLESv2_adreno.so|cd95e3dce59b222d1b1049277becc9f734a89f97
+vendor/lib/egl/libQTapGLES.so|957d9c98f3c29e7bf1da02fedac0789ada49dc70
+vendor/lib/egl/libq3dtools_adreno.so|b4b7bda387620de5f6ea2a29406f9351e855b8ed
+vendor/lib/libC2D2.so|c04a5ac1e576f63ebe91aba14bf917ee9e382be0
+vendor/lib/libCB.so|6574501e0e342bac74044afc48b33f5119712417
+vendor/lib/libOpenCL.so|9ee3900265f9b855f526c0ce4fcfdaed51d62003
+vendor/lib/libRSDriver_adreno.so|374bce395a719d37638f8e92a4abd691f632298f
+vendor/lib/libadreno_utils.so|3a09e6720121f5b459a1fc7f9639b632da5832ec
+vendor/lib/libbccQTI.so|124156259b7900ac44c48dd9cf83b210d02d8c9d
+vendor/lib/libc2d30_bltlib.so|4a486823ef2a9ea14f4f02c9eb9053ac5fb028af
+vendor/lib/libgsl.so|78d9d3b7863d9f4192a1d1a74d578061f3cdf806
+vendor/lib/libhdr_tm.so|4c371d0931245a65d0b4df768de8837bbdf4832e
+vendor/lib/libllvm-glnext.so|466a83ac7d6252726daedc98a1efa01c8051efcb
+vendor/lib/libllvm-qcom.so|0f52061f018edd59559cee43230ea61ac3c67468
+vendor/lib/libmm-hdcpmgr.so|f1c3042526d2cc3a2e675ba579db0753f0ec1d69
+vendor/lib/librs_adreno.so|9f0022a5c38a676a580511749bab3c538ed8b803
+vendor/lib/librs_adreno_sha1.so|62445125cf9958e44c35f866b609e8292cfce579
+
+# Graphics (SDM) - from X00P - QKQ1.191002.002 17.00.2003.23-20200401
+vendor/lib/libscalar.so|7ac579768ffd2caee903d69d8fd3f7918b04ffbe
+vendor/lib/libsdm-color.so|fa3f8c0062d474fdf6960fcbcc3bf21a5c3fd594
+vendor/lib/libsdm-diag.so|46b5c2d6fab1e655efde1657b2e51dc00c00b763
+-vendor/lib/libsdm-disp-vndapis.so|9bd99e0024f5abcc285f64aadea8725556f16789
+vendor/lib/libsdmextension.so|5d4f365e0f9cae77e51deab70ea27114ea57389b
+vendor/lib/libtinyxml2_1.so|ef2167416f7a5a503256c5e818fcfa660d5146f4
 
 # IOP
 vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
@@ -1154,19 +1156,14 @@ vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib/libperipheral_client.so
 
-# Postprocessing
-lib/vendor.display.color@1.0.so
-lib/vendor.display.color@1.1.so
-lib/vendor.display.color@1.2.so
-lib/vendor.display.postproc@1.0.so
+# Postprocessing - from X00P - QKQ1.191002.002 17.00.2003.23-20200401
 vendor/bin/hw/vendor.display.color@1.0-service
-vendor/etc/init/vendor.display.color@1.0-service.rc
-vendor/lib/libdisp-aba.so
-vendor/lib/libmm-hdcpmgr.so
-vendor/lib/vendor.display.color@1.0.so
-vendor/lib/vendor.display.color@1.1.so
-vendor/lib/vendor.display.color@1.2.so
-vendor/lib/vendor.display.postproc@1.0.so
+vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
+vendor/lib/libdisp-aba.so|6e455fb7f45537ebed7c753bc01b6eb22bfc3411
+vendor/lib/vendor.display.color@1.0.so|0f259a047d6e85c5b37d82936051a892400149c0
+vendor/lib/vendor.display.color@1.1.so|aabd4dea61fee83e732a0d0478b4a68560681095
+vendor/lib/vendor.display.color@1.2.so|dedc90f5fe55e9754d8b17476b3fc6faf3e77975
+vendor/lib/vendor.display.postproc@1.0.so|00f67e4ede7b82cbb853f2235eab89f7d916d236
 
 # QMI
 vendor/bin/irsc_util
@@ -1434,7 +1431,6 @@ vendor/lib/libMcClient.so
 vendor/lib/libnetfilter_conntrack.so
 vendor/lib/libnfnetlink.so
 vendor/lib/librecordalive.so
-vendor/lib/libscalar.so
 vendor/lib/libsec-ril-dsds.so
 vendor/lib/libsec-ril.so
 vendor/lib/libsecaudioinfo.so
