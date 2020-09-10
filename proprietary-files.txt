@@ -824,6 +824,7 @@ vendor/lib/mediadrm/libdrmclearkeyplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
 # Display-Hardware
+lib/libsdm-disp-apis.so
 vendor/lib/hw/gralloc.msm8937.so
 vendor/lib/libdrm.so
 vendor/lib/libdrmutils.so
@@ -833,10 +834,18 @@ vendor/lib/libqdMetaData.so
 vendor/lib/libqdutils.so
 vendor/lib/libqservice.so
 vendor/lib/libsdmcore.so
+vendor/lib/libsdmextension.so
 vendor/lib/libsdmutils.so
 vendor/lib/vendor.display.config@1.0.so
 vendor/lib/vendor.display.config@1.1.so
 vendor/lib/vendor.display.config@1.2.so
+vendor/lib/vendor.display.config@1.3.so
+vendor/lib/vendor.display.config@1.4.so
+vendor/lib/vendor.display.config@1.5.so
+vendor/lib/vendor.display.config@1.6.so
+vendor/lib/vendor.display.config@1.7.so
+vendor/lib/vendor.display.config@1.8.so
+vendor/lib/vendor.display.config@1.9.so
 
 # Dolby
 vendor/etc/dolby/dax-default.xml
@@ -1156,14 +1165,19 @@ vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib/libperipheral_client.so
 
-# Postprocessing - from X00P - QKQ1.191002.002 17.00.2003.23-20200401
+# Postprocessing
+lib/vendor.display.color@1.0.so
+lib/vendor.display.color@1.1.so
+lib/vendor.display.color@1.2.so
+lib/vendor.display.postproc@1.0.so
 vendor/bin/hw/vendor.display.color@1.0-service
-vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
-vendor/lib/libdisp-aba.so|6e455fb7f45537ebed7c753bc01b6eb22bfc3411
-vendor/lib/vendor.display.color@1.0.so|0f259a047d6e85c5b37d82936051a892400149c0
-vendor/lib/vendor.display.color@1.1.so|aabd4dea61fee83e732a0d0478b4a68560681095
-vendor/lib/vendor.display.color@1.2.so|dedc90f5fe55e9754d8b17476b3fc6faf3e77975
-vendor/lib/vendor.display.postproc@1.0.so|00f67e4ede7b82cbb853f2235eab89f7d916d236
+vendor/bin/mm-pp-dpps
+vendor/etc/init/vendor.display.color@1.0-service.rc
+vendor/lib/libdisp-aba.so
+vendor/lib/vendor.display.color@1.0.so
+vendor/lib/vendor.display.color@1.1.so
+vendor/lib/vendor.display.color@1.2.so
+vendor/lib/vendor.display.postproc@1.0.so
 
 # QMI
 vendor/bin/irsc_util
