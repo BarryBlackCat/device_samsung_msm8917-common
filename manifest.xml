@@ -609,15 +609,15 @@
         </interface>
         <fqname>@2.0::ISecureStorage/default</fqname>
     </hal>
-	<hal format="hidl">
+    <hal format="hidl">
         <name>vendor.samsung.hardware.biometrics.fingerprint</name>
         <transport>hwbinder</transport>
-        <version>2.1</version>
+        <version>3.0</version>
         <interface>
-            <name>ISecBiometricsFingerprint</name>
+            <name>ISehBiometricsFingerprint</name>
             <instance>default</instance>
         </interface>
-        <fqname>@2.1::ISecBiometricsFingerprint/default</fqname>
+        <fqname>@3.0::ISehBiometricsFingerprint/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.camera.provider</name>
