@@ -1,4 +1,0 @@
-service nqnfc_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@1.0-service.samsung8917
-    class hal
-    user nfc
-    group nfc
